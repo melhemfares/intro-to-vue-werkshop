@@ -1,18 +1,19 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div v-for="i in 5">
+    <ClickCounter />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import ClickCounter from '@/components/ClickCounter.vue'
 
 export default {
-  name: 'HomeView',
   components: {
-    HelloWorld
+    ClickCounter
   }
 }
 </script>
+
+<style>
+
+</style>
